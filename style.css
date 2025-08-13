@@ -1,0 +1,16 @@
+body{
+    
+}
+
+.shadow-img{
+    filter: drop-shadow(-8px 0px 3px rgba(0, 0, 0, 0.5));
+}
+
+a:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+.shadow-repo{
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
