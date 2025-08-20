@@ -1,5 +1,20 @@
+* {
+  font-family: "Nata Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
 body{
-    
+    padding-top: 30px;
+     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  
+}
+.shadow-head{
+box-shadow: 0px 0px 15px 5px rgb(0, 0, 0);
+z-index: 11;
 }
 
 .shadow-img{
@@ -13,4 +28,33 @@ a:hover{
 
 .shadow-repo{
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.laravel , .bootstrapcss , .javascript , .php , .typescript , .alex , .css3 , .full-stack{
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.laravel:hover , .bootstrapcss:hover , .javascript:hover , .php:hover , .typescript:hover , .alex:hover , .css3:hover , .full-stack:hover{
+    scale: 1.2;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.laravel:focus , .bootstrapcss:focus , .javascript:focus , .php:focus , .typescript:focus , .alex:focus , .css3:focus , .full-stack:focus{
+background-color: rgba(255, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+  .laravel:hover,
+  .bootstrapcss:hover,
+  .javascript:hover,
+  .php:hover,
+  .typescript:hover,
+  .alex:hover,
+  .css3:hover,
+  .full-stack:hover {
+    scale: 1;       /* reset */
+    z-index: auto;  /* reset */
+    transition: none;
+  }
 }
