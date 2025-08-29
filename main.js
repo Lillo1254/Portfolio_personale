@@ -29,3 +29,17 @@ let fine = document.querySelector("#fine");
 if (benvenuto) {
     fine.innerText = "P.s. Gentile " + benvenuto + " cliccando sull \' immagine del progetto verra reindirizzato alla pagina github con la struttura del codice. Grazie per la visita !";
 }
+
+let modale = document.querySelector(".modale");
+let chiudi = document.querySelector("#chiudi");
+let cert = document.querySelector("#cert");
+
+cert.addEventListener("click", () => {
+    modale.classList.add("visibile"); 
+});
+
+
+chiudi.addEventListener("click", (e) => {
+    e.stopPropagation();
+    modale.classList.remove("visibile"); 
+});
