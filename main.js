@@ -34,12 +34,16 @@ let modale = document.querySelector(".modale");
 let chiudi = document.querySelector("#chiudi");
 let cert = document.querySelector("#cert");
 
-cert.addEventListener("click", () => {
-    modale.classList.add("visibile"); 
-});
 
-
-chiudi.addEventListener("click", (e) => {
-    e.stopPropagation();
-    modale.classList.remove("visibile"); 
-});
+if(window.innerWidth > 800){
+    
+    cert.addEventListener("click", () => {
+        modale.classList.add("visibile"); 
+    });
+    
+    
+    chiudi.addEventListener("click", (e) => {
+        e.stopPropagation();
+        modale.classList.remove("visibile"); 
+    });
+}
