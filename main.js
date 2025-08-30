@@ -54,7 +54,7 @@ let video = document.querySelector(".video-bg");
 let raf;              
     
     window.addEventListener("scroll", () => {
-      scrollSpeed += 0.03; 
+      scrollSpeed += 0.007; 
     });
 
     function animate() {
@@ -63,7 +63,7 @@ let raf;
         if (video.currentTime >= video.duration) {
           video.currentTime = 0;
         }
-        scrollSpeed *= 0.5;
+        scrollSpeed *= 0.35;
       }
       raf = requestAnimationFrame(animate);
     }
