@@ -9,7 +9,7 @@
 
 body{
     padding-top: 30px;
-     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    
   
 }
 .shadow-head{
@@ -31,7 +31,8 @@ a:hover{
 }
 
 .laravel , .bootstrapcss , .javascript , .php , .typescript , .alex , .css3 , .full-stack , .mysql{
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.5));
+    
 }
 
 .laravel:hover , .bootstrapcss:hover , .javascript:hover , .php:hover , .typescript:hover , .alex:hover , .css3:hover , .full-stack:hover, .mysql:hover{
@@ -81,3 +82,17 @@ transition: 1s;
 #cert:hover{
   cursor: pointer;
 }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;  /* Adatta il video allo schermo */
+      z-index: -1;        /* Mette il video dietro ai contenuti */
+    }
+
+    .card{
+      background-color: rgba(255, 255, 255, 0.751);
+    }

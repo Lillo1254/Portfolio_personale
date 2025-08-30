@@ -22,8 +22,8 @@ if (benvenuto) {
 const color = document.querySelector('#title');
 
 setInterval(() => {
-    color.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
-}, 1500)
+    color.style.textShadow = `0px 0px 10px #${Math.floor(Math.random() * 16777215).toString(16)}`;
+}, 1500);
 
 let fine = document.querySelector("#fine");
 if (benvenuto) {
@@ -47,3 +47,25 @@ if(window.innerWidth > 800){
         modale.classList.remove("visibile"); 
     });
 }
+
+let video = document.querySelector(".video-bg");
+
+ let scrollSpeed = 0;  
+let raf;              
+    
+    window.addEventListener("scroll", () => {
+      scrollSpeed += 0.03; 
+    });
+
+    function animate() {
+      if (video.readyState >= 2) { 
+        video.currentTime += scrollSpeed; 
+        if (video.currentTime >= video.duration) {
+          video.currentTime = 0;
+        }
+        scrollSpeed *= 0.5;
+      }
+      raf = requestAnimationFrame(animate);
+    }
+
+    animate();
