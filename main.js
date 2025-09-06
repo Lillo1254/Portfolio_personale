@@ -1,7 +1,7 @@
 let benvenuto = localStorage.getItem("nome");
 
 if (benvenuto) {
-    alert("Bentornata/o " + benvenuto.toUpperCase() + " il local storage si svuota ogni 10 minuti con un set interval di 600000ms");
+    alert("Bentornata/o " + benvenuto.toUpperCase() + " il local storage si svuota ogni 10 minuti con un set interval di 60s");
 } else {
     benvenuto = prompt("Inserisci il tuo nome");
     localStorage.setItem("nome", benvenuto);
@@ -9,7 +9,7 @@ if (benvenuto) {
 const clearef = setInterval(() => {
     localStorage.clear();
     console.log("LocalStorage cancellato!");
-}, 600000);
+}, 60000);
 
 let title = document.querySelector('#title')
 
