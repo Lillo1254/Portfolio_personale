@@ -1,305 +1,350 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="it">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-   
-    <!-- google-fonts -->
-   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap" rel="stylesheet">
-    
-<!-- fine google-fonts -->
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Personale</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
+<body class="bg-dark text-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#progetti">Progetti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contatti">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-
-    <header class="d-flex justify-content-center shadow-head fixed-top bg-header">
-        <h1 id="title" class="text-center">Alessandro Lucia</h1>
+    <!-- Header -->
+    <header class="text-center py-5 bg-secondary">
+        <h1 class="fw-bold">Portfolio Alessandro Lucia</h1>
+        <p class="lead">Full stack web developer</p>
     </header>
 
-
-    <video class="video-bg" preload="auto" muted id="video">
-    <source src="./media/mixkit-bubbles-rising-in-water-178-hd-ready.mp4" type="video/mp4">
-    Il tuo browser non supporta i video HTML5.
-  </video>
-
-  <!-- Contenuto sopra il video -->
-
-
-    <main class="container-fluid d-flex justify-content-center align-items-center mt-5 pt-3 ">
-        <div class="row flex-column align-items-center justify-content-center w-100" >
-            <div tabindex="0" class="col-10 col-md-6 col-lg-6 full-stack" tabindex="0">
-
-                <article class="card mb-3 border-1 rounded-1 shadow" style="max-width: 540px;" id="card-1 ">
-                    <div class="row g-0">
-                        <div class="col-md-4 me-2 d-flex align-items-center">
-                            <img src="./media/diplomacut.jpg" class="img-fluid rounded-0" alt="..." loading="lazy" id="cert">
+    <!-- Sezione Competenze -->
+    <section class="container-fluid py-5">
+        <h2 class="text-center mb-5">Competenze</h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Card PHP -->
+            <div class="col-12 col-md-4 col-lg-5">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front d-flex align-items-center justify-content-center">
+                            <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" class="h-100"
+                                alt="PHP Logo" />
                         </div>
-                        <div class="col-md-7">
-                            <div class="card-body p-0">
-                                <h5 class="card-title">Jr. Full Stack Developer</h5>
-                                <p class="card-text m-0">HTML , CSS, JAVASCRIPT, LARAVEL, PHP , PHP , MYSQL
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary">Typescript autonomo, prossimo a
-                                        React, conoscenze librerie: Aos, Anime.js, DaisyUI,AnimateCss ed altro. </small></p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-
-            <div tabindex="0" class="col-10 col-lg-6 alex" >
-
-                <div class="card mb-3 border-1 rounded-1 shadow" style="max-width: 540px;;" >
-                    <div class="row g-0">
-                        <article class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Alessandro Lucia</h5>
-                                <p class="card-text">Nato a Roma il 22/01/1994
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary">L'attenzione al dettaglio, la
-                                        sequenza logica, l'adattabilità e soprattutto la curiosità sono alla base del mio
-                                        lavoro.</small></p>
-                            </div>
-                        </article>
-                        <div class="col-md-4">
-                            <img src="./media/fotocut.png" class="img-fluid rounded-0 shadow-img" alt="..." loading="lazy">
+                        <div class="flip-card-back p-3">
+                            <h5>PHP</h5>
+                            <p>
+                                PHP è un linguaggio di scripting lato server ampiamente
+                                utilizzato per lo sviluppo web. Permette la creazione di
+                                applicazioni dinamiche e interattive, integrandosi facilmente
+                                con database e framework.
+                            </p>
                         </div>
                     </div>
                 </div>
-
             </div>
 
-            <div tabindex="0" class="col-10 col-lg-6 bootstrapcss" >
-
-                <div class="card mb-3 border-1 rounded-1 shadow" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <article class="col-md-4 d-flex align-items-center">
-                            <img src="./media/bootstrapimg.png" class="img-fluid rounded-0" alt="..." loading="lazy">
-                        </article>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">BOOTSTRAP FRAMEWORK</h5>
-                                <p class="card-text">Mobile-first and responsive design
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary">Credo che l'utilizzo di un
-                                        framework mobile-first e responsive al giorno d'oggi sia alla base dello
-                                        sviluppo web poiche sempre piu l'utente utilizza dispositivi mobili e tablet per
-                                        navigare</small></p>
-                            </div>
+            <!-- Card Laravel -->
+            <div class="col-12 col-md-4 col-lg-5">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front d-flex align-items-center justify-content-center">
+                            <img src="./media/LARAVELPNG-removebg-preview.png" class="h-100" alt="Laravel Logo" />
+                        </div>
+                        <div class="flip-card-back p-3">
+                            <h5>Laravel</h5>
+                            <p>
+                                Laravel è un framework PHP moderno che semplifica lo sviluppo
+                                web con un'architettura MVC, migrazioni e una sintassi
+                                elegante. È ideale per costruire applicazioni scalabili e
+                                sicure.
+                            </p>
                         </div>
                     </div>
                 </div>
-
             </div>
 
-            <div tabindex="0" class="col-10 col-lg-6 php" >
-
-                <div class="card mb-3 border-1 rounded-1 shadow" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <article class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">PHP</h5>
-                                <p class="card-text"> HYPERTEXT PREPROCESSOR
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary">Un linguaggio lato server
-                                        multifunzionale, utilizabile in moltissime tipologia di database, completamente
-                                        strutturabile e estendibile per la programmazione di sicurezza e della gestione
-                                        dati back-end</small></p>
-                            </div>
-                        </article>
-                        <div class="col-md-4 d-flex align-items-center">
-                            <img src="./media/phpimg-removebg-preview.png" class="img-fluid rounded-0" alt="..." loading="lazy">
+            <!-- Card JavaScript -->
+            <div class="col-12 col-md-4 col-lg-5">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front d-flex align-items-center justify-content-center">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="h-100"
+                                alt="JavaScript Logo" />
+                        </div>
+                        <div class="flip-card-back p-3">
+                            <h5>JavaScript</h5>
+                            <p>
+                                JavaScript è il linguaggio principale per lo sviluppo
+                                front-end. Permette di creare interazioni dinamiche, gestire
+                                eventi e collegare API per migliorare l’esperienza utente sui
+                                siti web.
+                            </p>
                         </div>
                     </div>
                 </div>
-
             </div>
 
-            <div tabindex="0" class="col-10 col-lg-6 laravel" >
-
-                <div class="card mb-3 border-1 rounded-1 shadow" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <article class="col-md-4 d-flex align-items-center">
-                            <img src="./media/LARAVELPNG-removebg-preview.png" class="img-fluid rounded-0"
-                                alt="..." loading="lazy">
-                        </article>
-                        <article class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">LARAVEL FRAMEWORK</h5>
-                                <p class="card-text">Framework completo per lo sviluppo web
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary">Nessun comando SQL per database
-                                        diretto
-                                        poiche gestito da Eloquent ORM, utilizzo di Blade Template Engine per la
-                                        gestione di HTML dinamico, tipologia basata su MVC e strutturato su PHP</small>
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div tabindex="0" class="col-10 col-lg-6 css3" >
-
-                <div class="card mb-3 border-1 rounded-1 shadow" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <article class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">CSS3</h5>
-                                <p class="card-text">Linguaggio di stile per la presentazione e la formattazione di
-                                    contenuti HTML
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary">Permette di realizzare layout
-                                        responsivi, animazioni avanzate, transizioni fluide e design moderni.
-                                        Supporta variabili, flexbox, grid e media query per adattare i contenuti a
-                                        qualsiasi dispositivo.</small></p>
-                            </div>
-                        </article>
-                        <article class="col-md-4 d-flex align-items-center">
-                            <img src="./media/cssimg-removebg-preview.png" class="img-fluid rounded-0" alt="..." loading="lazy">
-                        </article>
-                    </div>
-                </div>
-
-            </div>
-
-            <div tabindex="0" class="col-10 col-lg-6 javascript" >
-
-                <div class="card mb-3 border-1 rounded-1 shadow" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <article class="col-md-4 d-flex align-items-center">
-                            <img src="./media/javascriptimg.png" class="img-fluid rounded-0" alt="..." loading="lazy">
-                        </article>
-                        <article class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">JAVASCRIPT</h5>
-                                <p class="card-text">Linguaggio di programmazione essenziale per l'interattività nel web
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary">Consente di manipolare il DOM,
-                                        gestire eventi, effettuare chiamate API asincrone e creare esperienze
-                                        dinamiche lato client. Fondamentale per applicazioni moderne e Single Page
-                                        Application.</small></p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-            </div>
-
-            <div tabindex="0" class="col-10 col-lg-6 typescript" >
-
-                <div class="card mb-3 border-1 rounded-1 shadow" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <article class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">TYPESCRIPT</h5>
-                                <p class="card-text">Superset di JavaScript che introduce tipizzazione statica
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary"> Migliora la qualità del codice
-                                        grazie al controllo dei tipi, prevenendo errori a runtime.
-                                        Ideale per progetti complessi e scalabili, è spesso utilizzato in combinazione
-                                        con framework come Laravel per una totale sicurezza.</small></p>
-                            </div>
-                        </article>
-                        <article class="col-md-4 d-flex align-items-center">
-                            <img src="./media/typescriptimg.png" class="img-fluid rounded-0" alt="..." loading="lazy">
-                        </article>
-                    </div>
-                </div>
-
-            </div>
-
-            <div tabindex="0" class="col-10 col-lg-6 mysql" >
-
-                <div class="card mb-3 border-1 rounded-1 shadow" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <article class="col-md-4 d-flex align-items-center">
-                            <img src="./media/mysqlimg-removebg-preview.png" class="img-fluid rounded-0" alt="..." loading="lazy" >
-                        </article>
-                        <article class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">MySQL</h5>
-                                <p class="card-text">Sistema di gestione di database relazionali open-source
-                                </p>
-                                <p class="card-text"><small class="text-body-secondary"> Utilizza il linguaggio SQL per
-                                        l’interrogazione e la gestione dei dati.
-                                        È molto diffuso per applicazioni web grazie alla sua velocità, stabilità e
-                                        compatibilità con numerosi linguaggi di programmazione come PHP.</small></p>
-                            </div>
-                        </article>
+            <!-- Card HTML -->
+            <div class="col-12 col-md-4 col-lg-5">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front d-flex align-items-center justify-content-center">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" class="h-100"
+                                alt="HTML Logo" />
+                        </div>
+                        <div class="flip-card-back p-3">
+                            <h5>HTML</h5>
+                            <p>
+                                HTML è il linguaggio di markup che struttura le pagine web.
+                                Fornisce gli elementi base come titoli, paragrafi, immagini e
+                                link, costituendo lo scheletro di ogni sito internet.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <article class="col-12 col-md-3 col-lg-3 d-flex flex-column align-items-center gap-2">
+            <!-- Card CSS -->
+            <div class="col-12 col-md-4 col-lg-5">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front d-flex align-items-center justify-content-center">
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" class="h-100"
+                                alt="CSS Logo" />
+                        </div>
+                        <div class="flip-card-back p-3">
+                            <h5>CSS</h5>
+                            <p>
+                                CSS è utilizzato per dare stile alle pagine HTML. Permette di
+                                controllare colori, font, layout e animazioni, rendendo
+                                l’esperienza visiva moderna e personalizzata.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <a href="https://www.linkedin.com/in/alessandrolucia1994/" target="_blank"
-                    class="btn btn-primary rounded-1 w-100"> Linkedin</a>
-                <a href="./media/cv (type).pdf" target="_blank" class="btn btn-danger rounded-1 w-100"> Curriculum
-                    Vitae - CV </a>
-                <a href="https://github.com/Lillo1254" target="_blank" class="btn btn-secondary rounded-1 w-100"> Github
-                </a>
+            <!-- Card Bootstrap -->
+            <div class="col-12 col-md-4 col-lg-5">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front d-flex align-items-center justify-content-center">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" class="h-100"
+                                alt="Bootstrap Logo" />
+                        </div>
+                        <div class="flip-card-back p-3">
+                            <h5>Bootstrap</h5>
+                            <p>
+                                Bootstrap è un framework CSS che accelera lo sviluppo
+                                front-end grazie a componenti pronti e responsive. Consente di
+                                creare siti web ottimizzati per desktop e mobile con facilità.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            </article>
-        </div>
-    </div>
+            <!-- Card MySQL -->
+            <div class="col-12 col-md-4 col-lg-5">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front d-flex align-items-center justify-content-center w-100">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" class="h-100"
+                                alt="MySQL Logo" />
+                        </div>
+                        <div class="flip-card-back p-3">
+                            <h5>MySQL</h5>
+                            <p>
+                                MySQL è un sistema di gestione di database relazionali. È
+                                veloce, affidabile e ampiamente usato per applicazioni web che
+                                richiedono archiviazione e gestione efficiente dei dati.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <section class="container-fluid my-5 ">
-        <div class="row d-flex">
-            <div class="col-12 col-md-12 col-lg-3 my-4">
-                <a href="https://github.com/Lillo1254/Progetto_Finale" target="_blank"><img src="./media/intelleximg.jpg" class="img-fluid shadow-repo h-100" alt="" loading="lazy"></a>
-            </div>
-            <div class="col-12 col-md-12 col-lg-3 my-4">
-                <a href="https://github.com/Lillo1254/progetto_2_html_css_js" target="_blank"> <img src="./media/collectionimg.jpg" class="img-fluid shadow-repo h-100" alt="" loading="lazy"></a>
-            </div>
-            <div class="col-12 col-md-12 col-lg-3 my-4">
-                <a href="https://github.com/Lillo1254/progetto_html_css_js" target="_blank"><img src="./media/ristoimg.jpg" class="img-fluid shadow-repo h-100" alt="" loading="lazy"></a>
-            </div>
-            <div class="col-12 col-md-12 col-lg-3 my-4">
-                <a href="https://github.com/Lillo1254/progetto_1_html_css" target="_blank"><img src="./media/journalimg.jpg" class="img-fluid shadow-repo h-100" alt="" loading="lazy"></a>
-            </div>
-            <div class="col-12">
-                <p class="text-center text-white" id="fine"><small>Alessandro Lucia : cliccando sull'immagine vi indirizzera direttamente al
-                        codice salvato su github. Grazie per la visita</small></p>
-                        <address class="text-center text-white">
-                            email: <a href="mailto:alessandrolucia75@gmail.com" class="text-decoration-none">alessandrolucia75@gmail.com</a>
-                            <br>
-                            telefono: <a href="tel:+393473895639" class="text-decoration-none">+393473895639</a>
-                        </address>
+            <!-- card Ract.js -->
+            <div class="col-12 col-md-4 col-lg-5">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <h2 class="text-react text-center">currently studying</h2>
+                        <div class="flip-card-front d-flex align-items-center justify-content-center w-100">
+                            <img src="./media/reactlogo-removebg-preview.png" class="h-100" alt="MySQL Logo" />
+                        </div>
+                        <div class="flip-card-back p-3">
+                            <h5>React.js</h5>
+                            <p>
+                                React.js è una libreria JavaScript sviluppata da Facebook per
+                                la creazione di interfacce utente moderne e reattive. Si basa
+                                su un approccio component-based, che rende il codice modulare,
+                                riutilizzabile e più facile da mantenere. Grazie al Virtual
+                                DOM, React ottimizza gli aggiornamenti della UI garantendo
+                                performance elevate anche in applicazioni complesse. È una
+                                delle tecnologie più richieste nello sviluppo frontend e si
+                                integra perfettamente con API e framework backend.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <section id="progetti" class="container-fluid py-5">
+        <h2 class="text-center mb-5">Progetti</h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Progetto 1 -->
+            <div class="col-12 col-sm-6 col-lg-5">
+                <div class="card project-card text-bg-dark h-100">
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7348407689355390977/" target="_blank"
+                        class="text-decoration-none text-white">
+                        <img src="./media/journalimg.jpg" class="card-img" alt="Progetto 1" />
+                        <div
+                            class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 rounded">
+                            <h5 class="card-title">Web site Journal</h5>
+                            <p class="card-text">
+                                Primo progetto realizato in html e css con l'utilizzo di
+                                bootstrap per un foglio di giornale con effetto carta ruvida
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- fine Progetto 1 -->
 
-<div class="modale ">
-    <div class="position-relative">
-        <img src="./media/diplomacut.jpg" alt="" class="img-fluid">
-        <button id="chiudi" class="btn btn-danger position-absolute start-50">X</button>
+            <!-- Progetto 2 -->
+            <div class="col-12 col-sm-6 col-lg-5">
+                <div class="card project-card text-bg-dark h-100">
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7348407689355390977/" target="_blank"
+                        class="text-decoration-none text-white">
+                        <img src="./media/intelleximg.jpg" class="card-img" alt="Progetto 2" />
+                        <div
+                            class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 rounded">
+                            <h5 class="card-title">E-commerce</h5>
+                            <p class="card-text">
+                                Sito e-commerce sviluppato con PHP, JavaScript e Bootstrap,
+                                utilizzando il framework LARAVEL per un’esperienza utente
+                                fluida. Livewire per fluidita tra componenti e Mysql per
+                                gestione database.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- fine Progetto 2 -->
 
-    </div>
-</div>
+            <!-- Progetto 3 -->
+            <div class="col-12 col-sm-6 col-lg-5">
+                <div class="card project-card text-bg-dark h-100">
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7348407689355390977/" target="_blank"
+                        class="text-decoration-none text-white">
+                        <img src="./media/collectionimg.jpg" class="card-img" alt="Progetto 3" />
+                        <div
+                            class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 rounded">
+                            <h5 class="card-title">Web site Collection</h5>
+                            <p class="card-text">
+                                Sito portfolio sviluppato con HTML, CSS, Bootstrap e
+                                Javascript con sezioni animate e responsive. Ricerca tramite
+                                filtri e scalabilita completa.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- fine Progetto 3 -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+            <!--  Progetto 4 -->
+            <div class="col-12 col-sm-6 col-lg-5">
+                <div class="card project-card text-bg-dark h-100">
+                    <a href="https://www.linkedin.com/posts/alessandrolucia1994_breve-storia-dellutilizzo-di-animazioni-activity-7336703561902231552-cWdD?utm_source=share&utm_medium=member_desktop&rcm=ACoAACV6KcABURisIhcW6dMlipg6p_QhN9Rj3gE"
+                        target="_blank" class="text-decoration-none text-white">
+                        <img src="./media/ristoimg.jpg" class="card-img" alt="Progetto 3" />
+                        <div
+                            class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 rounded">
+                            <h5 class="card-title">Web site Restaurant</h5>
+                            <p class="card-text">
+                                Sito portfolio sviluppato con HTML, CSS, Javascript e
+                                Bootstrap con sezioni animate e responsive. con la possibile
+                                implementazione di un sistema di login e registrazione per uno
+                                shop online.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- fine Progetto 4 -->
+        </div>
+    </section>
+
+    <!-- Contatti -->
+    <section id="contatti" class="container-fluid-fluid pt-5">
+        <div class="row justify-content-center w-100">
+            <div class="col-12 col-md-12 col-lg-12">
+                <h2 class="text-center mb-5 display-2">About Me</h2>
+            </div>
+            <div class="col-12 col-md-12 col-lg-3 order-lg-1 order-md-1">
+                <p>
+                    Un Full Stack Web Developer Junior con competenze in PHP, Laravel,
+                    JavaScript, HTML, CSS, Bootstrap e MySQL, capace di lavorare sia sul
+                    frontend che sul backend per realizzare applicazioni web complete e
+                    moderne.Sul lato backend utilizza PHP e Laravel per costruire
+                    applicazioni scalabili e sicure, gestendo dati e logica di business
+                    in modo strutturato ed efficiente. L’esperienza con MySQL gli
+                    permette di progettare e ottimizzare database relazionali,
+                    integrandoli con applicazioni dinamiche.
+                </p>
+            </div>
+            <div class="col-12 co.md-6 col-lg-4 text-center order-lg-2 order-md-3">
+                <img src="./media/fotocut.png" alt="" class="img-profile" />
+            </div>
+            <div class="col-12 col-md-12 col-lg-3 order-lg-3 order-md-1">
+                <p>
+                    Conosco bene la struttura e lo styling delle interfacce utente,
+                    creando layout responsive e accessibili, e padroneggia l’uso di
+                    framework come Bootstrap per velocizzare lo sviluppo e garantire una
+                    resa professionale anche su dispositivi mobili. Contraddistinto da
+                    caratteristiche come senso di responsabilita, curiosità, capacità di
+                    lavoro in equipe, organizzazione lavorativa e capacità di
+                    comunicazione.
+                    <a href="./media/cv (type).pdf" target="_blank"> Download CV qui</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- fine contatti -->
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-secondary">
+        <p class="mb-0">
+            © 2025 - Portfolio Personale | Sviluppato con Bootstrap
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 
 </html>
